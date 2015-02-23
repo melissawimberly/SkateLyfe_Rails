@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Skatelyfe</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <header>
+  <div class="banner">
+    <img class="skate_img" src="http://bit.ly/1MysPfh">
+  </div >
+  <div class="left-nav">
+    <ul>
+      <li><%= link_to "Home", skatelogs_path %></li>
+    </ul>
+  </div>
+
+  <div class="right-nav">
+    <ul>
+      <li><%= link_to "Add Skatelog", new_skatelog_path %></li>
+    </ul>
+  </div>
+
+  <div class="clearfix"> </div>
+  </header>
+    <div id="content">
+    <%= yield %>
+  </div>
+</body>
+</html>

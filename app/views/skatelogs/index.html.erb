@@ -1,0 +1,30 @@
+
+
+
+<div class="list_skatelogs">
+  <% @skatelogs.each do |skatelog| %>
+    <div class="skatelog">
+      <div class="title">
+        <%= link_to(skatelog.title, skatelog_path(skatelog)) %>
+      </div>
+
+      <div class="description">
+        <%=skatelog.description%>
+      </div>
+
+      <div class="edit_btn">
+        <ul>
+          <li><%= link_to "Edit Skatelog", edit_skatelog_path(skatelog) %></li>
+        </ul>
+      </div>
+
+      <div class="delete_btn">
+        <ul>
+          <li><%= link_to "Delete Skatelog", skatelog, method: :delete %></li>
+        </ul>
+      </div>
+
+        <div class="clearfix"> </div>
+    </div>
+  <% end %>
+</div>

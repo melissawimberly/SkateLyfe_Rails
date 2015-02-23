@@ -1,0 +1,2 @@
+module SkatelogsHelper
+end

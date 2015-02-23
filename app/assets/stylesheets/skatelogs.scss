@@ -1,0 +1,25 @@
+// Place all the styles related to the skatelogs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.skatelog{
+  border: 2px solid grey;
+  margin: 20px;
+}
+
+
+.clearfix{
+  clear: both;
+}
+
+.edit_btn{
+  float: left;
+}
+
+.delete_btn{
+  float: right;
+}
+
+.title, .description{
+  text-align: center;
+}
