@@ -1,0 +1,30 @@
+
+<div class="list_users">
+  <% @users.each do |user| %>
+    <div class="user">
+
+
+      <div class="username">
+        <%= link_to(user.username, user_path(user)) %>
+      </div>
+
+      <div class="name">
+        <%=user.name%>
+      </div>
+
+      <div class="edit_btn">
+        <ul>
+          <li><%= link_to "Edit User", edit_user_path(user) %></li>
+        </ul>
+      </div>
+
+      <div class="delete_btn">
+        <ul>
+          <li><%= link_to "Delete User", user, method: :delete %></li>
+        </ul>
+      </div>
+
+        <div class="clearfix"> </div>
+    </div>
+  <% end %>
+</div>
